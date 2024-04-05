@@ -2,7 +2,7 @@
 # Learning from Students: Applying t-Distributions to Explore Accurate and Efficient Formats for LLMs
 
 ## Introduction
-This codebase provides all the tools for replicating the results in the corresponding paper: **Learning from Students: Applying t-Distributions to Explore Accurate and Efficient Formats for LLMs**. It includes scripts for profiling LLM distributions and running LLMs for accuracy across datatypes.
+This codebase provides all the tools for replicating the results in the corresponding paper: **Learning from Students: Applying t-Distributions to Explore Accurate and Efficient Formats for LLMs**. It includes scripts for profiling LLM distributions, running LLMs for accuracy across datatypes, and generating the MAC hardware.
 
 
 ## Installation
@@ -47,3 +47,7 @@ The SF4 datatype was developed to match the LLM statistics for weights and activ
 
 ## Datatype Analysis
 For further analysis of the datatypes, use the `datatype_analysis.ipynb` found in `profiling/`. This file was used to generate many of the figures in the paper including the datatype comparison and Pareto curves. It calls `datatype_generators.py` for datatypes values, which parameterizes many of the datatypes for easy experimentation. 
+
+## Hardware
+The hardware models are located in the `/hardware` directory and include the files necessary to estimate the area and power using Synopsys
+Design Compiler.
